@@ -11,9 +11,3 @@ jobs:
       - uses: tool3/bump@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: switch Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.18.4'
-      - name: install node modules for angular
-        run: npm install
